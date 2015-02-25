@@ -41,6 +41,9 @@ public class BanList extends ActionBarActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ban_list);
 
+
+        ////Git tracking for branch local jim THIS IS A TEST LINE
+
         //// Calculate button height
         verticalThickness = Methods.calculateComponentSize(222, 600, getResources());
 
