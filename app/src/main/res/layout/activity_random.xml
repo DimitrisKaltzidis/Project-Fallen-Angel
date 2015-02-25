@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tardis.ordersamos.Random"
+    tools:ignore="MergeRootFrame">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/RandomLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_viewRI2"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#ffffff"
+
+
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:id="@+id/llFirstCardViewRI2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRandomText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/RandomText1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRandomText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="@string/RandomText2"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/ivRandomRefresh"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/gi_refresh"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_viewRI3"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompatPadding="false"
+
+                card_view:cardBackgroundColor="#ffffff"
+
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:id="@+id/llFirstCardViewRI3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRandomText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/RandomTextStore"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#c75c5c"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRandomStore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/RandomTextBlank"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRandomText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+
+                        android:text="@string/RandomTextFood"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#c75c5c"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRandomFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/RandomTextBlank"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/ivRandomDialer"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/phone_icon" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bInfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/food_info_nice" />
+
+</RelativeLayout>

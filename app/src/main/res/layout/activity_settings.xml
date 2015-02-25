@@ -1,0 +1,389 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    tools:context="com.tardis.ordersamos.Settings"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            android:background="#000000"
+
+
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:id="@+id/llFirstCardView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCallSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/settings_call_settings_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#c75c5c"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/trSettingsCarrier"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvSettingsCarrier"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_switch_carrier"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsCarrier"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trSettingsAutoCall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tvSettingsAutoCall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_switch_auto_call"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsAutoCall"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            android:background="#000000"
+
+
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:id="@+id/llFirstCardView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRandomSettings"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/settings_random_settings_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#c75c5c"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/trSettingsRandomStores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvSettingsRandomStores"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_switch_random_stores"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsRandomStores"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trSettingsRandomCategories"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:id="@+id/tvSettingsRandomCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_switch_random_categories"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsRandomCategories"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            android:background="#000000"
+
+
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:id="@+id/llFirstCardView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvGraphicSettings"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/settings_graphic_settings"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#c75c5c"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/trSettingsGraphicsWindowsTransitions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:id="@+id/tvSettingsGraphicsWindowsTransitions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_switch_graphic_window_transitions"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsGraphicsWindowsTransitions"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn=""  />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trSettingsGraphicsAnimations"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:id="@+id/tvSettingsGraphicsAnimations"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_switch_graphic_animations"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsGraphicsAnimations"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn="" />
+                </TableRow>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_viewControls"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            android:background="#000000"
+
+
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:id="@+id/llThirdCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvControlSettings"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/settings_interface_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#c75c5c"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/trSettingsControlsSwipe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:id="@+id/tvSettingsControlsSwipe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_interface_swipe"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsControlsSwipe"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn=""  />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trSettingsControlsOldMenuView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:id="@+id/tvSettingsControlsOldMenuView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/settings_switch_printed_catalogue"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#4f5d73"
+                        android:textStyle="bold" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSettingsControlsOldMenuView"
+                        style="@style/Widget.Button.Switch"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_weight="1"
+                        android:textOff=""
+                        android:textOn=""  />
+                </TableRow>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

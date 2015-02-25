@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.tardis.ordersamos"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 17
+        versionName "2.3.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['easyandroidanimationslibrary-v0.5.jar'], dir: 'libs')
+    compile 'com.jjoe64:graphview:4.0.0'
+    compile 'com.android.support:support-v4:21.0.+'
+    compile 'com.android.support:appcompat-v7:21.0.+'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.android.support:recyclerview-v7:21.0.+'
+    compile 'me.alexrs:wave-drawable:1.0.0'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.daimajia.slider:library:1.1.2@aar'
+    compile files('libs/mpandroidchartlibrary-1-7-4.jar')
+    compile files('libs/gson-1.4.jar')
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/mail.jar')
+    compile 'com.github.johnpersano:supertoasts:1.3.4@aar'
+
+}

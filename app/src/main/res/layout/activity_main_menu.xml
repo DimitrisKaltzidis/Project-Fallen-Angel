@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMainMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tardis.ordersamos.MainMenu"
+    tools:ignore="MergeRootFrame">
+
+
+    <Button
+        android:id="@+id/bStore"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="39dp"
+
+        android:background="@drawable/gi_cart"
+        android:nestedScrollingEnabled="true"
+        android:onClick="sda" />
+
+    <Button
+        android:id="@+id/bSearch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bStore"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/gi_search"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/bBan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/bStore"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gi_ban"
+        android:src="@drawable/gi_ban" />
+
+    <Button
+        android:id="@+id/bRandom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/bSearch"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gi_random"
+        android:text="" />
+
+    <Button
+        android:id="@+id/bSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/bBan"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/gi_settings"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bSearch"
+        android:layout_alignRight="@+id/bSearch"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvStores"
+        android:gravity="center"
+        android:text="@string/MainMenuCategorySearch"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ecf0f1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvStores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bStore"
+        android:layout_alignRight="@+id/bStore"
+        android:textStyle="bold"
+        android:layout_below="@+id/bStore"
+        android:gravity="center"
+        android:text="@string/MainMenuCategoryStore"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ecf0f1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvBanList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bBan"
+        android:layout_alignRight="@+id/bBan"
+        android:textStyle="bold"
+        android:layout_below="@+id/bBan"
+        android:gravity="center"
+        android:text="@string/MainMenuCategoryBanList"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ecf0f1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bRandom"
+        android:layout_alignRight="@+id/bRandom"
+        android:layout_below="@+id/bRandom"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/MainMenuCategoryRandom"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ecf0f1"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bInfo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/tvRandom"
+        android:layout_alignTop="@+id/bSettings"
+        android:background="@drawable/gi_info"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bInfo"
+        android:layout_alignRight="@+id/bInfo"
+        android:layout_below="@+id/bInfo"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/MainMenuCategoryInfo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ecf0f1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvInfo"
+        android:layout_alignBottom="@+id/tvInfo"
+        android:layout_alignLeft="@+id/bSettings"
+        android:layout_alignRight="@+id/bSettings"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/MainMenuCategorySettings"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ecf0f1"
+        android:textSize="15sp" />
+
+</RelativeLayout>

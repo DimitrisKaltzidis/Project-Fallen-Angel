@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tardis.ordersamos">
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+
+    <application
+        android:name=".Utilities.Methods"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenu"
+
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.MainMenu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Stores"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_cart"
+            android:label="@string/title_activity_stores"
+            android:parentActivityName=".MainMenu" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.Stores" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Search"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_search"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".MainMenu" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.Search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.MainMenu" />
+        </activity>
+        <activity
+            android:name=".BanList"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_ban"
+            android:label="@string/title_activity_ban_list"
+            android:parentActivityName=".MainMenu" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.BanList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Random"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_random"
+            android:label="@string/title_activity_random"
+            android:parentActivityName=".MainMenu" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.Random" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainMenu" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.Settings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Information"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_info"
+            android:label="@string/title_activity_information"
+            android:parentActivityName=".MainMenu" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.Information" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.MainMenu" />
+        </activity>
+        <activity
+            android:name=".Chart"
+            android:screenOrientation="landscape"
+            android:icon="@drawable/gi_graph"
+            android:label="@string/title_activity_chart"
+            android:parentActivityName=".Information" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.Chart" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.Information" />
+        </activity>
+        <activity
+            android:name=".MenuView"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_menu"
+            android:label="@string/title_activity_menu_view"
+            android:parentActivityName=".Stores" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.MenuView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.Stores" />
+        </activity>
+        <activity
+            android:name=".EasterEgg"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ee_hambruger"
+            android:label="@string/title_activity_easter_egg"
+            android:parentActivityName=".Information" >
+
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.EasterEgg" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.Information" />
+        </activity>
+        <activity
+            android:name=".ClassicMenuView"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/gi_classic_menu"
+            android:label="@string/title_activity_classic_menu_view"
+            android:parentActivityName=".Stores" >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.ClassicMenuView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tardis.ordersamos.Stores" />
+        </activity>
+        <activity
+            android:name=".RestaurantInformation"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/food_info_nice"
+            android:label="@string/title_activity_restaurant_information"
+
+
+            >
+            <intent-filter>
+                <action android:name="com.tardis.ordersamos.RestaurantInformation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tardis.ordersamos.Stores">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svStores"
+        android:scrollbars="none"
+
+         >
+        <LinearLayout
+            android:id="@+id/llStores"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            </LinearLayout>
+         </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlTut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6000000"
+        android:orientation="horizontal" >
+
+
+
+
+        <Button
+            android:id="@+id/bOpenSettingsMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/gi_settings"
+            android:layout_above="@+id/tvSettings"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="Μπορείτε να αλλάξετε τον τρόπο\n\n παρουσίασης του καταλόγου\n\n σε κατηγοριοποιημένη μορφή\n\n ή σε φωτογραφίες των καταλόγων\n\n απο το μενού των ρυθμίσεων\n\n στην κατηγορία 'Ρυθμίσεις διεπαφής' \n\n\n\n\nΚάνε ban ένα καταάστημα κρατώντας το πατημένο "
+            android:id="@+id/tvsas"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ρυθμίσες"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/tvSettings"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

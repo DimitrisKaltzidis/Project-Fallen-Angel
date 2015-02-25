@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ActionBar">#4f5d73</color>
+    <color name="StatusBar">#334766</color>
+    <color name="Soft_Red">#c75c5c</color>
+    <color name="Olive">#30463c</color>
+    <color name="Red_soft">#c75c5c</color>
+    <color name="White_soft">#e0e0d1</color>
+    <color name="Blue_light">#77b3d4</color>
+    <color name="Black_transparent">#B3000000</color>
+    <color name="Blue_text_dark_soft">#4f5d73</color>
+    <color name="White">#ffffff</color>
+    <color name="Color_Settings_Icon">#76c2af</color>
+    <color name="Color_Random_Icon">#14aeaa</color>
+    <color name="Color_Information_Icon">#77b3d4</color>
+    <color name="Color_Stores_Icon">#6dbec4</color>
+    <color name="Color_Search_Icon">#e0995e</color>
+    <color name="Color_Ban_Icon">#e0e0d1</color>
+
+
+    <string name="app_name">Order At Samos</string>
+    <string name="my_easter_egg">Ζελεδάκι σ αγαπώ!!!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_menu">Κεντρικό Μενού</string>
+    <string name="MainMenuCategoryStore">Καταστήματα</string>
+    <string name="MainMenuCategorySearch">Αναζήτηση</string>
+    <string name="MainMenuCategoryBanList">Ban List</string>
+    <string name="MainMenuCategoryRandom">Random</string>
+    <string name="MainMenuCategorySettings">Ρυθμίσεις</string>
+    <string name="MainMenuCategoryInfo">Πληροφορίες</string>
+    <string name="settings_call_settings_title">Ρυθμίσεις κλήσεων :</string>
+    <string name="settings_interface_title">Ρυθμίσεις διεπαφής :</string>
+    <string name="settings_interface_swipe">\tAνίχνευση χειρονομιών :</string>
+    <string name="settings_random_settings_title">Ρυθμίσεις Random :</string>
+    <string name="settings_switch_carrier">\tΑναγνώριση παρόχου</string>
+    <string name="settings_switch_auto_call">\tΑπευθείας κλήση</string>
+    <string name="settings_switch_random_stores">\tMόνο ψητοπωλεία</string>
+    <string name="settings_switch_random_categories">\tΒασικές κατηγορίες</string>
+    <string name="settings_graphic_settings">Ρυθμίσεις γραφικών</string>
+    <string name="settings_switch_graphic_window_transitions">\tΜεταβάσεις οθονών</string>
+    <string name="settings_switch_graphic_animations">\tΕφέ κουμπιών</string>
+    <string name="settings_switch_printed_catalogue">\tΈντυποι κατάλογοι</string>
+    <string name="title_activity_stores">Καταστήματα</string>
+    <string name="title_activity_search">Αναζήτηση</string>
+    <string name="title_activity_ban_list">Ban List</string>
+    <string name="title_activity_random">Random</string>
+    <string name="title_activity_settings">Ρυθμίσεις</string>
+    <string name="title_activity_information">Πληροφορίες</string>
+    <string name="title_activity_chart">Στατιστικά</string>
+    <string name="title_activity_menu_view">Κατάλογος</string>
+    <string name="title_activity_easter_egg">Moar swag burgers n00ps!!!</string>
+    <string name="title_activity_classic_menu_view">Κατάλογος</string>
+    <string name="title_activity_restaurant_information">Πληροφορίες</string>
+    <string name="restaurant_information_phones">Τηλέφωνα</string>
+    <string name="information_version">Version : 2.3.2</string>
+    <string name="information_disclaimer">Οι τιμές των προϊόντων ενδέχεται να αλλάξουν χωρίς προειδοποίηση. Οι δημιουργοί δεν φέρουν καμία ευθύνη.</string>
+    <string name="information_email">Στείλτε μας e-mail</string>
+    <string name="information_title">Order at Samos</string>
+    <string name="RandomText1">Δεν ξέρεις τι να παραγγείλεις;</string>
+    <string name="RandomText2">Θα σου προτείνουμε εμείς!</string>
+    <string name="RandomTextBlank">~</string>
+    <string name="RandomTextStore">Κατάστημα - Κατηγορία</string>
+    <string name="RandomTextFood">Φαγητό</string>
+    <string name="SearchHead">Επιλέξτε κατάστημα και κατηγορία</string>
+    <string name="SearchCategory">Κατηγορία  :</string>
+    <string name="SearchStore">Κατάστημα:</string>
+    <string name="StoreUnban">Έχεις banάρει όλα τα καταστήματα.</string>
+
+
+</resources>
