@@ -81,8 +81,8 @@ public class Random extends ActionBarActivity {
 
                 //// Set text to zero if something is wrong
                 try {
-                    tvRandomFood.setText("");
-                    tvRandomStore.setText("");
+                    tvRandomFood.setText("~");
+                    tvRandomStore.setText("~");
                 } catch (Exception e) {
                     Log.d("CRASH", "TEXT SETTING CLEARING");
                 }
@@ -148,26 +148,31 @@ public class Random extends ActionBarActivity {
         bRandomDialer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try {
+                    if (!tvRandomFood.getText().toString().equals("~")) {
+                        //// Animates the button and calls a restaurant based on preferences
+                        if (Preferences.loadPrefsString("ANIMATIONS", "OFF", getApplicationContext()).equals("ON")) {
+                            new ScaleOutAnimation(v).setDuration(190).setListener(new AnimationListener() {
 
-                //// Animates the button and calls a restaurant based on preferences
-                if (Preferences.loadPrefsString("ANIMATIONS", "OFF", getApplicationContext()).equals("ON")) {
-                    new ScaleOutAnimation(v).setDuration(190).setListener(new AnimationListener() {
 
+                                @Override
+                                public void onAnimationEnd(com.easyandroidanimations.library.Animation animation) {
+                                    callRestaurant(getApplicationContext(), getBaseContext());
+                                }
 
-                        @Override
-                        public void onAnimationEnd(com.easyandroidanimations.library.Animation animation) {
+                            }).animate();
+                        } else {
                             callRestaurant(getApplicationContext(), getBaseContext());
                         }
 
-                    }).animate();
-                } else {
-                    callRestaurant(getApplicationContext(), getBaseContext());
-                }
+                        //// Change preferences order number
+                        int value = Preferences.loadPrefsInt(rf.getRestaurantName() + "_ORDERS", -1,
+                                getApplicationContext());
+                        Preferences.savePrefsInt(rf.getRestaurantName() + "_ORDERS", value + 1, getApplicationContext());
+                    }
+                } catch (Exception e) {
 
-                //// Change preferences order number
-                int value = Preferences.loadPrefsInt(rf.getRestaurantName() + "_ORDERS", -1,
-                        getApplicationContext());
-                Preferences.savePrefsInt(rf.getRestaurantName() + "_ORDERS", value + 1, getApplicationContext());
+                }
             }
         });
 

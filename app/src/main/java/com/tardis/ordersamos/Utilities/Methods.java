@@ -221,6 +221,7 @@ public class Methods extends Application {
 
     //// Used for getting The Restaurants for The Splash Saving Ban State for FIRST_TIME and the
     //// 'getRestaurantsAndTheirBanState(Context context)' method in Methods
+    @SuppressLint("LongLogTag")
     public static ArrayList<Restaurant> getRestaurantsFromDatabase(Context context) {
         //// Creating an Object DataBaseHelper to access database
         DataBaseHelper myDbHelper;
